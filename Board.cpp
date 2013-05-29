@@ -71,6 +71,9 @@ bool Board::checkForRepeat(){
 bool Board::equals(Board b){
 	return false;
 }
+void Board::setBoardState(BoardState bs){
+	this->bs = bs;
+}
 
 int main(int argc, char* argv[]){
 	Board board = *(new Board());

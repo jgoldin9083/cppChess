@@ -5,18 +5,19 @@
 #include "Square.h"
 #include "Color.h"
 #include "util.h"
+#include "BoardState.h"
 
 class Board{
 	public:
 		Board();
 		PIECE board[8][8];
 //		Move lastMove;
-//		BoardState bs;
+		BoardState bs;
 		Square WKing,BKing;
 //		varsizeArray turns;
 		bool WQCastle,WKCastle,BQCastle,BKCastle;
 		COLOR turn;
-//		setBoardState(BoardState bs);
+		void setBoardState(BoardState bs);
 		PIECE PieceAt(Square s);
 		PIECE PieceAt(int col,int row);
 //		void Move(Move m);
