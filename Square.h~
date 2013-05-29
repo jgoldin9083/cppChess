@@ -7,7 +7,6 @@ class Square{
 		Square(int,int);		
 		int row;
 		int col;
-		int hashCode();
 };
 
 #endif
