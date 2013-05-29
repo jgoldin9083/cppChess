@@ -7,6 +7,6 @@ Square::Square(int c,int r){
 		row = r;
 }
 
-Square::hashCode(){
+int Square::hashCode(){
 	return col*8+row;
 }
